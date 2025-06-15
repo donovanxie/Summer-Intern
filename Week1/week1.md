@@ -25,6 +25,9 @@ SoC则是集成了所有现代计算机系统部件在一个单独的芯片上�
 冯诺依曼结构的处理器使用同一个存储器，经由同一个总线进行传输，这意味着冯诺依曼结构下，程序空间和数据空间是一体的，冯诺依曼结构要求处理器必须有一个存储器，一个控制器，一个运算器和输入输出设备。
 
 而哈佛结构最大的特点是他是一种将程序指令存储器和数据存储器分开的结构。这使得哈佛结构的处理器在执行命令时，可以预先读取下一条指令，同时，这种分开的结构也使指令和数据拥有不同的宽度成为可能。
+<div align=center>
+<img src="https://pica.zhimg.com/70/v2-3333594d99b4c825d99737d7d771b99c_1440w.avis?source=172ae18b&biz_tag=Post">
+</div>
 
 ## ARM分哪些异常等级?
 ARMv8下存在4个异常等级，EL0-3。
@@ -37,3 +40,6 @@ EL2在官方文档中被描述为Hypervisor，通常应用于虚拟机，例如�
 
 EL3为最高级别，官方文档描述为Secure monitor。EL3决定核心在secure和non-secure之间切换，在ARM下也称为TrustZone split。芯片被点亮后第一个运行的firmware往往是EL3级别，可以启动ROM，也可以进行固件更新。
 
+<div align=center>
+<img src="https://documentation-service.arm.com/static/67ac57fb091bfc3e0a9479d7?token=">
+</div>
