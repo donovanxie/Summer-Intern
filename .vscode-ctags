@@ -1,0 +1,30 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combineV2/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROC_CWD	/home/fxie/Desktop/Summer-Intern/	//
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	5.9.0	//
+$(OUT_ARM)	Week 2/makefile	/^$(OUT_ARM): %.arm.o ;         # static pattern rule (uses target-specific prereq below)$/;"	t
+$(OUT_X86)	Week 2/makefile	/^$(OUT_X86): $(SRC:.c=.o)      # pattern substitutes .c → .o$/;"	t
+%.arm.o	Week 2/makefile	/^%.arm.o: %.c$/;"	t
+%.o	Week 2/makefile	/^%.o: %.c                      # pattern rule: host object build$/;"	t
+ARM_CC	Week 2/makefile	/^ARM_CC       ?= arm-linux-gnueabihf-gcc      # cross-compiler (override on cmd-line)$/;"	m
+ARM_CFLAGS	Week 2/makefile	/^ARM_CFLAGS   ?= -Wall -O2$/;"	m
+BASE	Week 2/makefile	/^BASE         := $(basename $(SRC))           # => week1$/;"	m
+HOST_CC	Week 2/makefile	/^HOST_CC      ?= gcc                          # host compiler$/;"	m
+HOST_CFLAGS	Week 2/makefile	/^HOST_CFLAGS  ?= -Wall -O2$/;"	m
+OUT_ARM	Week 2/makefile	/^OUT_ARM      := $(BASE)_arm                  # final ARM  binary name$/;"	m
+OUT_X86	Week 2/makefile	/^OUT_X86      := $(BASE)_x86                  # final host binary name$/;"	m
+SRC	Week 2/makefile	/^SRC          := week1.c                       # single-file “project”$/;"	m
+all	Week 2/makefile	/^all: x86 arm$/;"	t
+arm	Week 2/makefile	/^arm: $(OUT_ARM)$/;"	t
+clean	Week 2/makefile	/^clean:     ## remove all intermediate & final artifacts$/;"	t
+info	Week 2/makefile	/^info:      ## print detected tool-chains$/;"	t
+main	Week 1/week1.c	/^int main() {$/;"	f	typeref:typename:int
+main	Week 2/week1.c	/^int main() {$/;"	f	typeref:typename:int
+x86	Week 2/makefile	/^x86: $(OUT_X86)$/;"	t
