@@ -1,0 +1,36 @@
+Breakpoint 1 at 0x1236: file Week3_Task1.c, line 12.
+Starting program: /home/fxie/Desktop/Summer-Intern/Week3/bug 
+
+This GDB supports auto-downloading debuginfo from the following URLs:
+  <https://debuginfod.ubuntu.com>
+Debuginfod has been enabled.
+To make this setting permanent, add 'set debuginfod enabled on' to .gdbinit.
+Downloading separate debug info for system-supplied DSO at 0x7ffff7fc3000
+[###                                                                         ]                                                                                [Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Breakpoint 1, main () at Week3_Task1.c:12
+$1 = (int *) 0x7fffffffd438
+Hardware watchpoint 2: *ptr
+Continuing.
+
+Hardware watchpoint 2: *ptr
+
+Old value = -10235
+New value = 0
+main () at Week3_Task1.c:26
+
+Hardware watchpoint 2: *ptr
+
+Old value = 0
+New value = 10
+main () at Week3_Task1.c:28
+
+Watchpoint 2 deleted because the program has left the block in
+which its expression is valid.
+__libc_start_call_main (main=main@entry=0x55555555522a <main>, argc=argc@entry=1, argv=argv@entry=0x7fffffffd438) at ../sysdeps/nptl/libc_start_call_main.h:74
+Download failed: 无效的参数.  Continuing without source file ./csu/../sysdeps/nptl/libc_start_call_main.h.
+Download failed: 无效的参数.  Continuing without source file ./csu/../sysdeps/nptl/libc_start_call_main.h.
+Warning: 'set logging off', an alias for the command 'set logging enabled', is deprecated.
+Use 'set logging enabled off'.
+
