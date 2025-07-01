@@ -1,14 +1,25 @@
 {
   "configurations": [
     {
-      "name": "linux-gcc-x64",
+      "name": "linux-gcc-arm-qemu-kernel",
       "includePath": [
-        "${workspaceFolder}/**"
+        "${workspaceFolder}/**",
+        "/home/fxie/Desktop/SummerIntern_QEMU/linux-6.12.34/include",
+        "/home/fxie/Desktop/SummerIntern_QEMU/linux-6.12.34/include/generated",
+        "/home/fxie/Desktop/SummerIntern_QEMU/linux-6.12.34/include/uapi",
+        "/home/fxie/Desktop/SummerIntern_QEMU/linux-6.12.34/arch/arm/include",
+        "/home/fxie/Desktop/SummerIntern_QEMU/linux-6.12.34/arch/arm/include/generated",
+        "/home/fxie/Desktop/SummerIntern_QEMU/linux-6.12.34/arch/arm/include/uapi"
       ],
-      "compilerPath": "/usr/bin/gcc",
+      "defines":[
+        "__KERNEL__",
+        "MODULE", 
+        "KBUILD_MODNAME=\"simple_char\""
+      ],
+      "compilerPath": "/usr/bin/arm-linux-gnueabihf-gcc",
       "cStandard": "${default}",
       "cppStandard": "${default}",
-      "intelliSenseMode": "linux-gcc-x64",
+      "intelliSenseMode": "linux-gcc-arm",
       "compilerArgs": [
         ""
       ]
