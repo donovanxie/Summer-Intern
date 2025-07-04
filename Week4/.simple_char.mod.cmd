@@ -1,1 +1,0 @@
-savedcmd_/home/fxie/Desktop/Summer-Intern/Week4/simple_char.mod := printf '%s\n'   simple_char.o | awk '!x[$$0]++ { print("/home/fxie/Desktop/Summer-Intern/Week4/"$$0) }' > /home/fxie/Desktop/Summer-Intern/Week4/simple_char.mod

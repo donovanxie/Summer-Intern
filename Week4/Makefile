@@ -1,4 +1,4 @@
-obj-m := simple_char.o
+obj-m := simple_char.o simple_char_ioctl.o
 
 KDIR ?= /home/fxie/Desktop/SummerIntern_QEMU/linux-6.12.34
 ARCH ?= arm

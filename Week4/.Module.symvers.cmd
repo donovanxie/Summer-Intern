@@ -1,1 +1,0 @@
-savedcmd_/home/fxie/Desktop/Summer-Intern/Week4/Module.symvers :=  scripts/mod/modpost -M        -o /home/fxie/Desktop/Summer-Intern/Week4/Module.symvers -T /home/fxie/Desktop/Summer-Intern/Week4/modules.order -i Module.symvers -e 
