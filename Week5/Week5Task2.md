@@ -65,7 +65,7 @@ init/main.c   kernel_init_freeable()
 | `device_initcall` | `amba_init()` (`drivers/amba/bus.c`)                        | `Serial: AMBA PL011 UART driver`                 |
 | `device_initcall` | `demo_char_init()` (`drivers/misc/demo_char/simple_char.c`) | `demo_char: loaded  major=250 minor=0, buf=1024` |
 
-`module_init()` expands to `device_initcall()` when `CONFIG_DEMO_CHAR=y`, so your driver banner appears here automatically.
+`module_init()` expands to `device_initcall()` when `CONFIG_DEMO_CHAR=y`, so the driver banner appears here automatically.
 
 ---
 
